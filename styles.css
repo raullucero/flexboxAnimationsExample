@@ -14,7 +14,10 @@ body {
   flex: 1;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
+
+
 
 .uno {
   background: yellow;
