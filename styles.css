@@ -17,12 +17,19 @@ body {
   flex-direction: column;
 }
 
+.panel.open {
+  flex: 5;
+  font-size: 40px;
+}
+
 .panel > * {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center
 }
+
+
 
 .panel > *:first-child {
   transform: translateY(-100%);
