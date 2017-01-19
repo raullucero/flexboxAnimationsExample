@@ -9,12 +9,17 @@ body {
   width: 100vw;
   display: flex;
 }
-.panel-wrapper .panel {
+
+.panel {
   display: flex;
   flex: 1;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: 
+    font-size 0.7s cubic-bezier(0.075, 0.82, 0.165, 1),
+    flex 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    background 0.2s;
 }
 
 .panel.open {
@@ -26,10 +31,9 @@ body {
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
+  transition: transform 0.5s;
 }
-
-
 
 .panel > *:first-child {
   transform: translateY(-100%);
